@@ -1,0 +1,63 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(/assets/helvetica.ttf) format("ttf");
+}
+
+body{
+	font-family:Helvetica, arial, sans-serif;
+	font-size:14px;
+}
+
+/* HEADER */
+header{
+	background-color:#01579b;
+	padding:15px 0;
+	color:#fff;
+	margin-bottom:50px;
+}
+header .img3{}
+header .bg-light{background-color:inherit !important;}
+header .navbar-brand{}
+/* MENU */
+.navbar-brand svg{color:#fff;width:150px;height:50px;}
+.navbar-expand-lg .navbar-nav a.nav-link{color:#fff;padding:0 12px;font-size:14px;}
+.navbar-nav a:hover{color:#fff;background:none;}
+
+.container{margin:0 auto 0;}
+.img1{width:120px;}
+.img2{}
+
+/* SECTION */
+section h3{font-size:18px;}
+
+/* GRADE */
+#grade{width:100%;}
+.g-row{width:100%;}
+.g-row .g-col{width:10%;float:left;text-align:center;}
+.g-row .g-col a{
+	background-color:#673ab7/*#33cc00*/;
+	display:block;width:
+	calc(100% - 5px);
+	padding:15px 0;
+	margin:5px 0;
+	text-decoration:none;
+	color:#fff;
+}
+
+footer{clear:both;}
+
+.close-modal{
+	margin:auto;
+	display:table;
+}
+
+/* REQUETIMENTO */
+.requerimento-text{min-height:180px;padding:8px 10px;}

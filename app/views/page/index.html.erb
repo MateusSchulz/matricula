@@ -1,0 +1,41 @@
+<header>
+  <%= render partial: "menu" %>
+</header>
+
+<section>
+<div class="container">
+	
+	<% if user_signed_in? %>
+	
+		<h3>Olá <%= @user.name %></h3>
+		<br>
+
+		<div class="row">
+
+			<div id="grade">
+				<%= render partial: "grade" %>
+			</div>
+			<div class="ementas">
+				<%= render partial: "ementas" %>
+			</div>
+
+		</div>
+
+<!-- 		<div class="row">
+			<ul>
+			<% @users.each do |user| %>
+				<li><%= user.name %></li>
+			<% end %>
+			</ul>
+		</div> -->
+
+	<% else %>
+
+		<h1>Olá, seja bem vindo ao Sistema de Pré Matrículas!</h1>
+
+	<% end %>
+
+</div>
+</section>
+
+<%= render partial: "footer" %>

@@ -1,0 +1,35 @@
+<header>
+  <%= render partial: "menu" %>
+</header>
+
+<section>
+<div class="container">
+
+	<form class="w-100">
+		<div class="row justify-content-center">
+
+				<div class="col-sm-8">
+				
+					<div class="form-group">
+						<label for="requerimento">Tipo de Requerimento: </label>
+				    <select class="form-control" id="requerimento">
+				      <option>Quebra de Requisito</option>
+				      <option>Inclusão de Disciplina(s)</option>
+				      <option>Exclusão de Disciplina(s)</option>
+				      <option>Trancamento de Matricula</option>
+				      <option>Outros</option>
+				    </select>
+					</div>
+					<div class="form-group">
+						<textarea class="w-100 requerimento-text" placeholder="Escreva aqui sua solicitação..."></textarea>
+					</div>
+					<button type="button" class="btn btn-primary ml-auto mr-auto d-table">ENVIAR</button>
+				</div>
+
+		</div>
+	</form>
+
+</div>
+</section>
+
+<%= render partial: "footer" %>

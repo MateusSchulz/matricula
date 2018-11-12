@@ -13,3 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+$('#ementas .modal').on('shown.bs.modal', function () {
+  $('#grade a').trigger('focus')
+})
